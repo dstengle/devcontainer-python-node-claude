@@ -8,8 +8,8 @@
 		"ghcr.io/devcontainers-extra/features/bash-command:1": {
 			"command": "(curl -sSL \"https://github.com/buildpacks/pack/releases/download/v0.37.0/pack-v0.37.0-linux.tgz\" | sudo tar -C /usr/local/bin/ --no-same-owner -xzv pack)"
 		},
-		"ghcr.io/devcontainers/features/docker-outside-of-docker": {
-			"version": "latest",
+		"ghcr.io/devcontainers/features/docker-in-docker": {
+			"version": "latest"
 		},
 		"ghcr.io/devcontainers-extra/features/poetry": {
 			"version": "1.8.2",
