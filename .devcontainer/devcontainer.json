@@ -9,7 +9,8 @@
 			"command": "(curl -sSL \"https://github.com/buildpacks/pack/releases/download/v0.37.0/pack-v0.37.0-linux.tgz\" | sudo tar -C /usr/local/bin/ --no-same-owner -xzv pack)"
 		},
 		"ghcr.io/devcontainers/features/docker-outside-of-docker": {
-			"version": "latest",
+			"moby": false,
+			"version": "latest"
 		},
 		"ghcr.io/devcontainers-extra/features/poetry": {
 			"version": "1.8.2",
@@ -52,7 +53,7 @@
 	//  "runArgs" : [
 	// 		"--network="
 	//  ]
-	"postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+	"postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash",
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
