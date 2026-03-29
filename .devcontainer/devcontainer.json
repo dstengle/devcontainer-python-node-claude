@@ -4,10 +4,14 @@
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:3-3.14-trixie",
+
 	"features": {
 		// "ghcr.io/devcontainers-extra/features/bash-command:1": {
 		// 	"command": "(curl -sSL \"https://github.com/buildpacks/pack/releases/download/v0.37.0/pack-v0.37.0-linux.tgz\" | sudo tar -C /usr/local/bin/ --no-same-owner -xzv pack)"
 		// },
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+      "packages": "git, vim, curl, tmux"
+    },
 		"ghcr.io/devcontainers-extra/features/bash-command:1": {
 			"command": "curl -fsSL https://claude.ai/install.sh | sudo -u vscode bash"
 		},
