@@ -9,3 +9,4 @@ mv specstory /usr/local/bin/ && chmod +x /usr/local/bin/specstory
 RUN curl -fsSL https://claude.ai/install.sh | sudo -u vscode bash
 RUN curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash && ln -s /usr/lib/x86_64-linux-gnu/libicui18n.so /usr/lib/x86_64-linux-gnu/libicui18n.so.74
 RUN cd /tmp && curl -L -o temporal.tar.gz "https://temporal.download/cli/archive/latest?platform=linux&arch=amd64" && \
+tar -xzf temporal.tar.gz && mv temporal /usr/local/bin/ && chmod +x /usr/local/bin/temporal
