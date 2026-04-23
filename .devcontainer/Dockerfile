@@ -29,4 +29,4 @@ RUN ARCH=$(uname -m) && \
 #     cd / && rm -rf /tmp/beads && \
 #     apt-get purge -y --no-install-recommends golang gccgo && \
 #     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/*
-   
+RUN bash install-gascity.sh   
