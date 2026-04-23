@@ -1,5 +1,5 @@
 # Set the version you want (check https://github.com/gastownhall/gascity/releases)
-VERSION=0.13.3
+# VERSION=0.13.3
 
 # Detect platform
 OS=$(uname -s | tr '[:upper:]' '[:lower:]')
