@@ -27,6 +27,9 @@ RUN ARCH=$(uname -m) && \
 #
 # Gas City
 #
-COPY install-gascity.sh /tmp/install-gascity.sh
-RUN chmod +x /tmp/install-gascity.sh && VERSION=1.0.0 /tmp/install-gascity.sh && rm /tmp/install-gascity.sh
-RUN curl -fsSL https://github.com/dolthub/dolt/releases/latest/download/install.sh | bash
+# COPY install-gascity.sh /tmp/install-gascity.sh
+# RUN chmod +x /tmp/install-gascity.sh && VERSION=1.0.0 /tmp/install-gascity.sh && rm /tmp/install-gascity.sh
+# RUN curl -fsSL https://github.com/dolthub/dolt/releases/latest/download/install.sh | bash
+
+# Install personal build of gascity temporarily
+RUN curl -fsSL https://raw.githubusercontent.com/dstengle/gascity/personal/main/scripts/install.sh | sh
