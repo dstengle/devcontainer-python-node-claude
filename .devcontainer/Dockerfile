@@ -21,7 +21,7 @@ RUN curl -fsSL https://claude.ai/install.sh | sudo -u vscode bash
 # Beads install prereq for gascity
 #
 RUN ARCH=$(uname -m) && \
-    BEADS_VERSION="v1.0.2" && \
+    BEADS_VERSION="v1.0.3" && \
     if [ "$ARCH" = "aarch64" ]; then LIB_DIR="aarch64-linux-gnu"; else LIB_DIR="x86_64-linux-gnu"; fi && \
     curl -fsSL https://raw.githubusercontent.com/gastownhall/beads/${BEADS_VERSION}/scripts/install.sh | bash && \
     ln -s /usr/lib/${LIB_DIR}/libicui18n.so /usr/lib/${LIB_DIR}/libicui18n.so.74
