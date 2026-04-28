@@ -7,6 +7,8 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+  repository_dispatch:
+    types: [gascity-personal-build-completed]
 
 env:
   REGISTRY: ghcr.io
