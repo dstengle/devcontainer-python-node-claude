@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/python:3-3.14-trixie
 # Install
-RUN apt-get update && apt-get install -y git vim curl tmux wget golang
+RUN apt-get update && apt-get install -y git vim curl tmux wget golang inotify-tools
 RUN pip install uv
 #
 # Specstory for capturing agent chat logs
